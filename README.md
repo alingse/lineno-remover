@@ -11,21 +11,29 @@ Online tool: https://alingse.github.io/lineno-remover/
 ### Example
 
 **Input**
-```
-1. public class HelloWorld {
-2.     public static void main(String[] args) {
-3.         System.out.println("Hello, World!");
-4.     }
-5. }
+```sql
+1 -- 菜品表 (dishes)
+2 -- 用于存储每个用户自定义的菜品
+3 CREATE TABLE public.dishes (
+4   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+5   created_at TIMESTAMPTZ DEFAULT now() NOT NULL,
+6   name TEXT NOT NULL,
+7   notes TEXT,
+8   user_id UUID DEFAULT auth.uid() REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL
+9 );
 ```
 
 **Output**
-```
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+```sql
+-- 菜品表 (dishes)
+-- 用于存储每个用户自定义的菜品
+CREATE TABLE public.dishes (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  created_at TIMESTAMPTZ DEFAULT now() NOT NULL,
+  name TEXT NOT NULL,
+  notes TEXT,
+  user_id UUID DEFAULT auth.uid() REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL
+);
 ```
 
 ---
@@ -43,19 +51,29 @@ Gemini、Claude 等大语言模型 CLI 工具生成的代码、命令或 SQL 查
 ### 例子
 
 **输入**
-```
-1. public class HelloWorld {
-2.     public static void main(String[] args) {
-3.         System.out.println("Hello, World!");
-4.     }
-5. }
+
+```sql
+1 -- 菜品表 (dishes)
+2 -- 用于存储每个用户自定义的菜品
+3 CREATE TABLE public.dishes (
+4   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+5   created_at TIMESTAMPTZ DEFAULT now() NOT NULL,
+6   name TEXT NOT NULL,
+7   notes TEXT,
+8   user_id UUID DEFAULT auth.uid() REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL
+9 );
 ```
 
 **输出**
-```
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+
+```sql
+-- 菜品表 (dishes)
+-- 用于存储每个用户自定义的菜品
+CREATE TABLE public.dishes (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  created_at TIMESTAMPTZ DEFAULT now() NOT NULL,
+  name TEXT NOT NULL,
+  notes TEXT,
+  user_id UUID DEFAULT auth.uid() REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL
+);
 ```
