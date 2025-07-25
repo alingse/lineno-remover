@@ -1,0 +1,243 @@
+███            █████████  ██████████ ██████   ██████ █████ ██████   █████ █████
+░░░███         ███░░░░░███░░███░░░░░█░░██████ ██████ ░░███ ░░██████ ░░███ ░░███
+  ░░░███      ███     ░░░  ░███  █ ░  ░███░█████░███  ░███  ░███░███ ░███  ░███
+    ░░░███   ░███          ░██████    ░███░░███ ░███  ░███  ░███░░███░███  ░███
+     ███░    ░███    █████ ░███░░█    ░███ ░░░  ░███  ░███  ░███ ░░██████  ░███
+   ███░      ░░███  ░░███  ░███ ░   █ ░███      ░███  ░███  ░███  ░░█████  ░███
+ ███░         ░░█████████  ██████████ █████     █████ █████ █████  ░░█████ █████
+░░░            ░░░░░░░░░  ░░░░░░░░░░ ░░░░░     ░░░░░ ░░░░░ ░░░░░    ░░░░░ ░░░░░
+
+
+Tips for getting started:
+1. Ask questions, edit files, or run commands.
+2. Be specific for the best results.
+3. Create GEMINI.md files to customize your interactions with Gemini.
+4. /help for more information.
+
+
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│  > 请你使用中英文简单补充一个使用说明，链接是 https://alingse.github.io/lineno-remover/ 请你举一个例子，并更新到   │
+│    README.md 里面，英文在上面，中文在下面。不要太啰嗦了，因为这个项目人一看就知道。                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ ╭────────────────────────╮
+ │ ✔  ReadFile README.md  │
+ ╰────────────────────────╯
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ ✔  WriteFile Writing to README.md                                                                          │
+ │                                                                                                            │
+ │    1      # lineno-remover                                                                                 │
+ │    2      remove the lineno for the llm generate code                                                      │
+ │    3    +                                                                                                  │
+ │    4    + ## Usage                                                                                         │
+ │    5    +                                                                                                  │
+ │    6    + Online tool: https://alingse.github.io/lineno-remover/                                           │
+ │    7    +                                                                                                  │
+ │    8    + ### Example                                                                                      │
+ │    9    +                                                                                                  │
+ │    10   + **Input**                                                                                        │
+ │    11   + ```                                                                                              │
+ │    12   + 1. public class HelloWorld {                                                                     │
+ │    13   + 2.     public static void main(String[] args) {                                                  │
+ │    14   + 3.         System.out.println("Hello, World!");                                                  │
+ │    15   + 4.     }                                                                                         │
+ │    16   + 5. }                                                                                             │
+ │    17   + ```                                                                                              │
+ │    18   +                                                                                                  │
+ │    19   + **Output**                                                                                       │
+ │    20   + ```                                                                                              │
+ │    21   + public class HelloWorld {                                                                        │
+ │    22   +     public static void main(String[] args) {                                                     │
+ │    23   +         System.out.println("Hello, World!");                                                     │
+ │    24   +     }                                                                                            │
+ │    25   + }                                                                                                │
+ │    26   + ```                                                                                              │
+ │    27   +                                                                                                  │
+ │    28   + ---                                                                                              │
+ │    29   +                                                                                                  │
+ │    30   + ## 使用说明                                                                                      │
+ │    31   +                                                                                                  │
+ │    32   + 在线工具: https://alingse.github.io/lineno-remover/                                              │
+ │    33   +                                                                                                  │
+ │    34   + ### 例子                                                                                         │
+ │    35   +                                                                                                  │
+ │    36   + **输入**                                                                                         │
+ │    37   + ```                                                                                              │
+ │    38   + 1. public class HelloWorld {                                                                     │
+ │    39   + 2.     public static void main(String[] args) {                                                  │
+ │    40   + 3.         System.out.println("Hello, World!");                                                  │
+ │    41   + 4.     }                                                                                         │
+ │    42   + 5. }                                                                                             │
+ │    43   + ```                                                                                              │
+ │    44   +                                                                                                  │
+ │    45   + **输出**                                                                                         │
+ │    46   + ```                                                                                              │
+ │    47   + public class HelloWorld {                                                                        │
+ │    48   +     public static void main(String[] args) {                                                     │
+ │    49   +         System.out.println("Hello, World!");                                                     │
+ │    50   +     }                                                                                            │
+ │    51   + }                                                                                                │
+ │    52   + ```                                                                                              │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✦ 好的，我已经更新了 README.md 文件。
+
+╭───────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│  > 你也可以简单说一下背景。说LLM 等 cli 工具生成的命令，或者 SQL                                          │
+│    或者简短代码，需要复制到其他平台时，总是带了行号，等等这些背景（我的真实案例是生成了 supabase 的 sql   │
+│    需要粘贴去执行的时候）                                                                                 │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+✦ 好的，这个背景信息很有用，能让别人更好地理解这个工具的价值。我已经把这段说明补充进去了。
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ ✔  WriteFile Writing to README.md                                                                          │
+ │                                                                                                            │
+ │    1      # lineno-remover                                                                                 │
+ │    2    - remove the lineno for the llm generate code                                                      │
+ │    2    + Remove line numbers from code generated by LLMs.                                                 │
+ │    3                                                                                                       │
+ │    4    + When working with LLM-based tools, the generated commands, SQL queries, or code snippets often   │
+ │           include line numbers. This can be inconvenient when you need to copy the content for execution,  │
+ │           for example, pasting generated SQL into a database platform like Supabase. This tool provides a  │
+ │           quick way to strip those line numbers.                                                           │
+ │    5    +                                                                                                  │
+ │    6      ## Usage                                                                                         │
+ │    7                                                                                                       │
+ │    8      Online tool: https://alingse.github.io/lineno-remover/                                           │
+ │    ══════════════════════════════════════════════════════════════════════════════════════════════════════  │
+ │    29                                                                                                      │
+ │    30     ---                                                                                              │
+ │    31                                                                                                      │
+ │    32   + ## 行号移除器                                                                                    │
+ │    33   + 移除由大语言模型生成的代码中的行号。                                                             │
+ │    34   +                                                                                                  │
+ │    35   + 在使用基于 LLM 的工具时，生成的命令、SQL                                                         │
+ │           查询或代码片段通常会带有行号。当您需要复制内容用于执行时（例如，将生成的 SQL 粘贴到 Supabase     │
+ │           等平台），这些行号会造成不便。本工具可以帮助您快速地移除它们。                                   │
+ │    36   +                                                                                                  │
+ │    37     ## 使用说明                                                                                      │
+ │    38                                                                                                      │
+ │    39     在线工具: https://alingse.github.io/lineno-remover/                                              │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✦ 我更新了 README.md 文件，加入了您提到的背景信息。
+
+╭─────────────────────────────────────────────────────────────────╮
+│  > 请调一下 cli 工具，并且你的语句不是很通顺。请你调整一下吧。  │
+╰─────────────────────────────────────────────────────────────────╯
+
+✦ 好的，我重新调整了 README.md 中的措辞，使其更流畅自然。
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ ✔  WriteFile Writing to README.md                                                                          │
+ │                                                                                                            │
+ │    1      # lineno-remover                                                                                 │
+ │    2    - Remove line numbers from code generated by LLMs.                                                 │
+ │    2                                                                                                       │
+ │    4    - When working with LLM-based tools, the generated commands, SQL queries, or code snippets often   │
+ │           include line numbers. This can be inconvenient when you need to copy the content for execution,  │
+ │           for example, pasting generated SQL into a database platform like Supabase. This tool provides a  │
+ │           quick way to strip those line numbers.                                                           │
+ │    3    + Removes line numbers from code snippets generated by Large Language Models (LLMs).               │
+ │    4                                                                                                       │
+ │    5    + LLMs often format generated code, commands, or SQL queries with line numbers. While helpful for  │
+ │           reference, these numbers can be cumbersome when you need to copy and paste the output for        │
+ │           direct execution—for instance, running a generated SQL script in a database client like          │
+ │           Supabase. This tool simplifies the process by quickly removing those line numbers.               │
+ │    6    +                                                                                                  │
+ │    7      ## Usage                                                                                         │
+ │    8                                                                                                       │
+ │    9      Online tool: https://alingse.github.io/lineno-remover/                                           │
+ │    ══════════════════════════════════════════════════════════════════════════════════════════════════════  │
+ │    30                                                                                                      │
+ │    31     ---                                                                                              │
+ │    32                                                                                                      │
+ │    32   - ## 行号移除器                                                                                    │
+ │    33   - 移除由大语言模型生成的代码中的行号。                                                             │
+ │    33   + # 行号移除器                                                                                     │
+ │    34                                                                                                      │
+ │    35   - 在使用基于 LLM 的工具时，生成的命令、SQL                                                         │
+ │           查询或代码片段通常会带有行号。当您需要复制内容用于执行时（例如，将生成的 SQL 粘贴到 Supabase     │
+ │           等平台），这些行号会造成不便。本工具可以帮助您快速地移除它们。                                   │
+ │    35   + 移除大语言模型（LLM）生成的代码片段中的行号。                                                    │
+ │    36                                                                                                      │
+ │    37   + 大语言模型生成的代码、命令或 SQL                                                                 │
+ │           查询通常会包含行号。这些行号在参考时很有用，但在需要直接复制并执行代码时（例如，在 Supabase      │
+ │           这样的数据库客户端中运行生成的 SQL                                                               │
+ │           脚本），它们就显得很多余。本工具可以快速移除这些行号，简化您的工作流程。                         │
+ │    38   +                                                                                                  │
+ │    39     ## 使用说明                                                                                      │
+ │    40                                                                                                      │
+ │    41     在线工具: https://alingse.github.io/lineno-remover/                                              │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✦ 我已经更新了 README.md，调整了措辞，使其更加通顺。
+
+╭──────────────────────────────────────────────────────────────────╮
+│  > 强调一下是 gemini /claude 等 LLM code cli 工具输出的片段代码  │
+╰──────────────────────────────────────────────────────────────────╯
+
+✦ 好的，我把 Gemini 和 Claude 作为例子加入说明中，让场景更具体。
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ ✔  WriteFile Writing to README.md                                                                          │
+ │                                                                                                            │
+ │    1      # lineno-remover                                                                                 │
+ │    2                                                                                                       │
+ │    3    - Removes line numbers from code snippets generated by Large Language Models (LLMs).               │
+ │    3    + Removes line numbers from code snippets generated by LLM-based CLI tools like Gemini and         │
+ │           Claude.                                                                                          │
+ │    4                                                                                                       │
+ │    5    - LLMs often format generated code, commands, or SQL queries with line numbers. While helpful for  │
+ │           reference, these numbers can be cumbersome when you need to copy and paste the output for        │
+ │           direct execution—for instance, running a generated SQL script in a database client like          │
+ │           Supabase. This tool simplifies the process by quickly removing those line numbers.               │
+ │    5    + LLM-based CLI tools like Gemini and Claude often format generated code, commands, or SQL         │
+ │           queries with line numbers. While helpful for reference, these numbers can be cumbersome when     │
+ │           you need to copy and paste the output for direct execution—for instance, running a generated     │
+ │           SQL script in a database client like Supabase. This tool simplifies the process by quickly       │
+ │           removing those line numbers.                                                                     │
+ │    6                                                                                                       │
+ │    7      ## Usage                                                                                         │
+ │    8                                                                                                       │
+ │    ══════════════════════════════════════════════════════════════════════════════════════════════════════  │
+ │    32                                                                                                      │
+ │    33     # 行号移除器                                                                                     │
+ │    34                                                                                                      │
+ │    35   - 移除大语言模型（LLM）生成的代码片段中的行号。                                                    │
+ │    35   + 移除 Gemini、Claude 等大语言模型（LLM）CLI 工具生成的代码片段中的行号。                          │
+ │    36                                                                                                      │
+ │    37   - 大语言模型生成的代码、命令或 SQL                                                                 │
+ │           查询通常会包含行号。这些行号在参考时很有用，但在需要直接复制并执行代码时（例如，在 Supabase      │
+ │           这样的数据库客户端中运行生成的 SQL                                                               │
+ │           脚本），它们就显得很多余。本工具可以快速移除这些行号，简化您的工作流程。                         │
+ │    37   + Gemini、Claude 等大语言模型 CLI 工具生成的代码、命令或 SQL                                       │
+ │           查询通常会包含行号。这些行号在参考时很有用，但在需要直接复制并执行代码时（例如，在 Supabase      │
+ │           这样的数据库客户端中运行生成的 SQL                                                               │
+ │           脚本），它们就显得很多余。本工具可以快速移除这些行号，简化您的工作流程。                         │
+ │    38                                                                                                      │
+ │    39     ## 使用说明                                                                                      │
+ │    40                                                                                                      │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✦ 我更新了 README.md，明确指出了 Gemini 和 Claude 等工具。
+
+╭───────────╮
+│  > /quit  │
+╰───────────╯
+
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                │
+│  Agent powering down. Goodbye!                                                                                                 │
+│                                                                                                                                │
+│  Interaction Summary                                                                                                           │
+│  Tool Calls:                 5 ( ✔ 5 ✖ 0 )                                                                                     │
+│  Success Rate:               100.0%                                                                                            │
+│  User Agreement:             100.0% (1 reviewed)                                                                               │
+│                                                                                                                                │
+│  Performance                                                                                                                   │
+│  Wall Time:                  5m 28s                                                                                            │
+│  Agent Active:               1m 33s                                                                                            │
+│    » API Time:               1m 16s (81.0%)                                                                                    │
+│    » Tool Time:              17.8s (19.0%)                                                                                     │
+│                                                                                                                                │
+│                                                                                                                                │
+│  Model Usage                  Reqs   Input Tokens  Output Tokens                                                               │
+│  ───────────────────────────────────────────────────────────────                                                               │
+│  gemini-2.5-pro                  9         70,814          1,776                                                               │
+│                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
